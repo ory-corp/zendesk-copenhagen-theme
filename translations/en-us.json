@@ -58,6 +58,8 @@
   "request_list_beta_description": "Users can sort and filter requests, add and remove columns",
   "request_list_beta_label": "New request list experience",
   "request_list_group_label": "Requests list",
+  "requests": "Tickets",
+  "my_requests": "My tickets",
   "scoped_community_search_description": "Search results are confined to the topic the user is in",
   "scoped_community_search_label": "Scoped search in Community",
   "scoped_knowledge_base_search_description": "Search results are confined to the category the user is in",
