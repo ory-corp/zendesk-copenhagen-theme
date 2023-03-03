@@ -14,7 +14,11 @@
     <nav class="user-nav" id="user-nav">
       <ul class="user-nav-list">
         <li>{{link 'community'}}</li>
-        <li>{{link 'new_request' class='submit-a-request'}}</li>
+        <li>
+          {{#link 'new_request' role="menuitem" class='submit-a-request'}}
+          	Create Ticket
+          {{/link}}
+        </li>
         {{#unless signed_in}}
           <li>
             {{#link "sign_in" class="sign-in"}}
@@ -37,7 +41,7 @@
         </button>
         <div class="dropdown-menu" role="menu">
           {{#my_profile role="menuitem"}}{{t 'profile'}}{{/my_profile}}
-          {{link "requests" role="menuitem"}}
+          {{#link "requests" role="menuitem"}}Ticket List{{/link}}
           {{#link "contributions" role="menuitem"}}{{t "activities"}}{{/link}}
           {{contact_details role="menuitem"}}
           {{change_password role="menuitem"}}
@@ -69,7 +73,7 @@
               </div>
             {{/my_profile}}
           </li>
-          <li class="item">{{link "requests" role="menuitem"}}</li>
+          <li class="item">{{#link "requests" role="menuitem"}}Ticket List{{/link}}</li>
           <li class="item">{{#link "contributions" role="menuitem"}}{{t "activities"}}{{/link}}</li>
           <li class="item">{{contact_details role="menuitem"}}</li>
           <li class="item">{{change_password role="menuitem" class='change-password'}}</li>
@@ -83,7 +87,11 @@
           <li class="nav-divider"></li>
         {{/if}}
         <li class="item">{{link 'community' role="menuitem"}}</li>
-        <li class="item">{{link 'new_request' role="menuitem" class='submit-a-request'}}</li>
+        <li class="item">
+          {{#link 'new_request' role="menuitem" class='submit-a-request'}}
+          	Create Ticket
+          {{/link}}
+        </li>
         <li class="nav-divider"></li>
         {{#if signed_in}}
           <li class="item">
