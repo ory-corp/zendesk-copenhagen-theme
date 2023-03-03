@@ -1,3 +1,6 @@
+# Ory Network Customizations
+Ory manages all customizations to the Zendesk HelpCenter in this repository. 
+
 # Copenhagen Theme by Zendesk
 
 The Copenhagen theme is the default Zendesk Guide theme. It is designed to be responsive and accessible.
