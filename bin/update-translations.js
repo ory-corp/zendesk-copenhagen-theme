@@ -7,7 +7,42 @@ const yaml = require('js-yaml');
 
 const ZSAP_BASE = `https://static.zdassets.com/translations`;
 const SUPPORTED_LOCALES = [
-  'en-US'
+  'ar',
+  'bg',
+  'cs',
+  'da',
+  'de',
+  'el',
+  'en-US',
+  'en-ca',
+  'en-gb',
+  'es',
+  'es-419',
+  'es-es',
+  'fi',
+  'fr',
+  'fr-ca',
+  'he',
+  'hi',
+  'hu',
+  'id',
+  'it',
+  'ja',
+  'ko',
+  'nl',
+  'no',
+  'pl',
+  'pt',
+  'pt-br',
+  'ro',
+  'ru',
+  'sv',
+  'th',
+  'tr',
+  'uk',
+  'vi',
+  'zh-cn',
+  'zh-tw'
 ]
 
 const translationDefinitions = yaml.load(fs.readFileSync('translations.yml', 'utf8')).parts;
