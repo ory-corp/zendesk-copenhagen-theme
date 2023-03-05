@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   Array.prototype.forEach.call(document.querySelectorAll('a,h1'), function (a) {
     console.log( ">> " + a.textContent)
-    if (a.textContent.includes('My requests') || a.textContent.includes("Requests I'm CC'd on") || a.textContent.includes('Organization tickets')) {
+    if (a.textContent.includes('My requests') || a.textContent.includes("Requests I'm CC'd on") || a.textContent.includes('Organization requests')) {
       a.textContent = a.textContent.replace('request', 'ticket').replace('Request', 'Ticket')
       console.log( "<< " + a.textContent)
     }
