@@ -84,6 +84,22 @@ document.addEventListener('DOMContentLoaded', function() {
   var DOWN = 40;
   var TAB = 9;
 
+  Array.prototype.forEach.call(document.querySelectorAll('a,h1'), function (a) {
+    console.log( ">> " + a.textContent)
+    if (a.textContent.includes('My requests') || a.textContent.includes("Requests I'm CC'd on") || a.textContent.includes('Organization tickets')) {
+      a.textContent = a.textContent.replace('request', 'ticket').replace('Request', 'Ticket')
+      console.log( "<< " + a.textContent)
+    }
+});
+
+Array.prototype.forEach.call(document.querySelectorAll('li'), function (a) {
+  console.log( ">> " + a.textContent)
+  if (a.textContent.includes('Submit a request')) {
+    a.textContent = a.textContent.replace('request', 'ticket').replace('Request', 'Ticket')
+    console.log( "<< " + a.textContent)
+  }
+});
+
   function closest (element, selector) {
     if (Element.prototype.closest) {
       return element.closest(selector);
