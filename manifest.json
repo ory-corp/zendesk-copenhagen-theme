@@ -1,7 +1,7 @@
 {
-  "name": "Copenhagen",
-  "author": "Zendesk",
-  "version": "2.21.1.6",
+  "name": "Ory Support",
+  "author": "Ory",
+  "version": "2.21.1.7",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
